@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Cors Test
+    meta(charset='utf-8')
+    script(type='text/javascript', src='app.js')
+    script(src='http://localhost:3001/socket.io/socket.io.js')
+  body(onload='Cors.init()')
+    div#result

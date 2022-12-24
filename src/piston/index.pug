@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title piston
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    meta(name='description', content='test app for pwa')
+    meta(name='theme-color', content='#000')
+    meta(lang='en')
+    link(rel='icon', href='icon_128.png')
+    link(rel='manifest', href='piston.webmanifest')
+    link(rel='apple-touch-icon', href='icon_192.png')
+    script(type='text/javascript', src='app.js')
+  body(onload='Piston.init()')
+    div piston !

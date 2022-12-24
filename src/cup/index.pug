@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Cup
+    meta(charset='utf-8')
+    script(type='text/javascript', src='app.js')
+    script(src='/socket.io/socket.io.js')
+  body(onload='Cup.init()')
+    div#connect
+      p
+        label(for='pseudo') name:
+        input#pseudo
+      p
+        label(for='pyzza') chip:
+        input#pyzza
+      p
+        button(onclick='Cup.connect()') Connect
+    div#messages(style='display:none')
