@@ -17,3 +17,7 @@ self.addEventListener("activate", (evt) => {
   })());
   self.clients.claim();
 });
+
+this.addEventListener('fetch', function (event) {
+  //
+});
